@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="initial-scale=1.0, width=device-width" name="viewport">
+    <title>Deal</title>
+    <!-- css -->
+    <link href="../css/base.min.css" rel="stylesheet">
+    <!-- css for this project -->
+    <link href="../css/project.min.css" rel="stylesheet">
+
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- favicon -->
+    <!-- ... -->
+    <!-- ie -->
+    <!--[if lt IE 9]>
+       <script src="../js/html5shiv.min.js"></script>
+        <script src="../js/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .form-control {
+            background-color: white !important;
+            background-image: none;
+            border: 0;
+            border-bottom: 1px solid #f5f5f5 !important;
+            border-radius: 0;
+            color: #808080 !important;
+            display: block;
+            font-size: 14px;
+            height: 36px;
+            line-height: 20px;
+            padding: 8px 0 7px;
+            transition: border-bottom-color .15s cubic-bezier(.4,0,.2,1);
+            width: 100%;
+        }
+
+        .clearable {
+            background: #fff url(../images/close.png) no-repeat right -25px center;
+            padding: 3px 18px 3px 4px; /* Use the same right padding (18) in jQ! */
+            border-radius: 3px;
+            transition: background 0.4s;
+        }
+
+            .clearable.x {
+                background-position: right 5px center;
+            }
+            /* (jQ) Show icon */
+            .clearable.onX {
+                cursor: pointer;
+            }
+            /* (jQ) hover cursor style */
+            .clearable::-ms-clear {
+                display: none;
+                width: 0;
+                height: 0;
+            }
+        /* Remove IE default X */
+        .privateheader {
+            background-color: #3f51b5;
+            color: white;
+        }
+
+        #lbl {
+            position: relative;
+            color: #7986cb;
+            font-size: 20px;
+        }
+
+            #lbl span {
+                position: absolute;
+                color: #3f51b5;
+                overflow: hidden;
+            }
+    </style>
+
+
+</head>
+<body class="avoid-fout page-brand">
+    <header class="header header-waterfall privateheader" style="box-shadow:0 1px 10px rgba(0,0,0,.5)">
+        <ul class="nav nav-list pull-left" id="navmenu">
+            <li>
+                <a data-toggle="menu" href="#menu">
+                    <span class="icon icon-lg">menu</span>
+                </a>
+            </li>
+        </ul>
+        <a class="header-logo margin-left-no" href="#" id="dealid">Deal</a>
+        <a class="header-logo icon icon-lg pull-right form-icon-label" id="refresh">refresh</a>
+        <a class="header-logo icon icon-lg pull-right form-icon-label" id="show">search</a>
+        <div class="searchhome">
+            <div class="media-object pull-left">
+                <label class="form-icon-label" for="input"><span class="icon" id="hide">keyboard_backspace</span></label>
+            </div>
+            <div class="media-inner">
+                <input class="form-control clearable" id="input-search" placeholder="" type="text">
+            </div>
+        </div>
+    </header>
+    <nav aria-hidden="true" class="menu" id="menu" tabindex="-1">
+        <div class="menu-scroll">
+            <div class="menu-content">
+                <div class="menu-top" style="background-color: #3f51b5 !important;">
+                    <div class="menu-top-img">
+                    </div>
+                    <div class="menu-top-info">
+                        <a class="menu-top-user" href="javascript:void(0)"><span class="avatar pull-left"><img alt="alt text for John Smith avatar" src="../images/users/avatar-001.jpg"></span>Welcome User</a>
+                    </div>
+                    <div class="menu-top-info-sub">
+                        <small>user123@gmail.com</small>
+                    </div>
+                </div>
+                <div class="menu-content">
+                    <ul class="nav">
+                        <li class="active">
+                            <a class="waves-attach waves-light" href="Deal.html">Deal</a>
+                        </li>
+                        <li>
+                            <a class="waves-attach waves-light" href="callreport.html">Call Report</a>
+                        </li>
+                        <li>
+                            <a class="waves-attach waves-light" href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a class="waves-attach waves-light" href="approvals.html">Approvals</a>
+                        </li>
+                        <li>
+                            <a class="waves-attach waves-light" href="myimplementations.html">My Implementations</a>
+                        </li>
+                        <li>
+                            <hr />
+                            <a class="waves-attach" href="../login.html"><span class="icon icon-lg">exit_to_app</span>Logout</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <br />
+                <div class="col-lg-6 col-lg-push-3 col-sm-10 col-sm-push-1">
+                    <section class="content-inner">
+
+                        <div class="card waves-effect">
+                            <div class="card-main">
+                                <div class="progress progress-brand" style="margin:0px !important;background-color:#e0e0e0!important;">
+                                    <div class="progress progress-brand" style="margin:0px !important;">
+                                        <div class="progress-bar" style="width: 20%;"></div>
+                                    </div>
+                                </div>
+                                <div class="card-action-btn pull-left">
+                                    <label id="lbl"><span style="height:20% !important;">20%</span>20%</label>
+                                </div>
+                                <div class="card-action-btn pull-right">
+                                    <div class="tile-action tile-action-show">
+                                        <ul class="margin-no nav nav-list pull-right">
+                                            <li>
+                                                <a class="text-sec waves-attach waves-effect" href="DealModify.html"><span class="icon">edit</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-inner" style="margin:40px 14px !important;">
+                                    <table>
+                                        <tr><td style="font-size: 16px;">$1000</td></tr>
+                                        <tr>
+                                            <td style="font-weight:bold;"><br />Government of the peoples republic of china </td>
+                                        </tr>
+                                        <tr><td><br />Demo Deal</td></tr>
+                                    </table>
+
+                                </div>
+
+                                <div class="card-action" style="padding-left: 10px; font-weight: bold; color: grey; padding-top: 12px;">
+                                    1-HIJJAL
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card waves-effect">
+                            <div class="card-main">
+                                <div class="progress progress-brand" style="margin:0px !important;background-color:#e0e0e0!important;">
+
+                                    <div class="progress progress-brand" style="margin:0px !important;">
+                                        <div class="progress-bar" style="width: 40%;"></div>
+                                    </div>
+                                    <!--<table>
+                    <tr  style="width:100%">
+                        <td style="background-color:red;width:20%;">20%</td>
+                        <td style="background-color:#ff6a00;width:20%;">40%</td>
+                        <td style="background-color:#ffd800;width:20%;">60%</td>
+                        <td style="background-color:#b6ff00;width:20%;">80%</td>
+                        <td style="background-color:#4cff00;width:20%;">100%</td>
+                    </tr>
+                </table>-->
+
+
+
+                                </div>
+                                <div class="card-action-btn pull-left">
+                                    <label id="lbl"><span style="height:40% !important;">40%</span>40%</label>
+                                </div>
+                                <div class="card-action-btn pull-right">
+                                    <div class="tile-action tile-action-show">
+                                        <ul class="margin-no nav nav-list pull-right">
+                                            <li>
+                                                <a class="text-sec waves-attach waves-effect" href="DealModify.html"><span class="icon">edit</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-inner" style="margin:40px 14px !important;">
+                                    <table>
+                                        <tr><td style="font-size: 16px;">$1000</td></tr>
+                                        <tr>
+                                            <td style="font-weight:bold;"><br />Government of the peoples republic of china </td>
+                                        </tr>
+                                        <tr><td><br />Demo Deal</td></tr>
+                                    </table>
+
+                                </div>
+
+                                <div class="card-action" style="padding-left: 10px; font-weight: bold; color: grey; padding-top: 12px;">
+                                    1-HIJJAL
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card waves-effect">
+                            <div class="card-main">
+                                <div class="progress progress-brand" style="margin:0px !important;">
+                                    <div class="progress-bar" style="width: 60%;"></div>
+                                </div>
+                                <div class="card-action-btn pull-left">
+                                    <label id="lbl"><span style="height:60% !important;">60%</span>60%</label>
+                                </div>
+                                <div class="card-action-btn pull-right">
+                                    <div class="tile-action tile-action-show">
+                                        <ul class="margin-no nav nav-list pull-right">
+                                            <li>
+                                                <a class="text-sec waves-attach waves-effect" href="DealModify.html"><span class="icon">edit</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-inner" style="margin:40px 14px !important;">
+                                    <table>
+                                        <tr><td style="font-size: 16px;">$1000</td></tr>
+                                        <tr>
+                                            <td style="font-weight:bold;"><br />Government of the peoples republic of china </td>
+                                        </tr>
+                                        <tr><td><br />Demo Deal</td></tr>
+                                    </table>
+
+                                </div>
+
+                                <div class="card-action" style="padding-left: 10px; font-weight: bold; color: grey; padding-top: 12px;">
+                                    1-HIJJAL
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card waves-effect">
+                            <div class="card-main">
+                                <div class="progress progress-brand" style="margin:0px !important;">
+                                    <div class="progress-bar" style="width: 80%;"></div>
+                                </div>
+                                <div class="card-action-btn pull-left">
+                                    <label id="lbl"><span style="height:80% !important;">80%</span>80%</label>
+                                </div>
+                                <div class="card-action-btn pull-right">
+                                    <div class="tile-action tile-action-show">
+                                        <ul class="margin-no nav nav-list pull-right">
+                                            <li>
+                                                <a class="text-sec waves-attach waves-effect" href="DealModify.html"><span class="icon">edit</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-inner" style="margin:40px 14px !important;">
+                                    <table>
+                                        <tr><td style="font-size: 16px;">$1000</td></tr>
+                                        <tr>
+                                            <td style="font-weight:bold;"><br />Government of the peoples republic of china </td>
+                                        </tr>
+                                        <tr><td><br />Demo Deal</td></tr>
+                                    </table>
+
+                                </div>
+
+                                <div class="card-action" style="padding-left: 10px; font-weight: bold; color: grey; padding-top: 12px;">
+                                    1-HIJJAL
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card waves-effect">
+                            <div class="card-main">
+                                <div class="progress progress-brand" style="margin:0px !important;">
+                                    <div class="progress-bar" style="width: 100%;"></div>
+                                </div>
+                                <div class="card-action-btn pull-left">
+                                    <label id="lbl"><span style="height:100% !important;">100%</span>100%</label>
+                                </div>
+                                <div class="card-action-btn pull-right">
+                                    <div class="tile-action tile-action-show">
+                                        <ul class="margin-no nav nav-list pull-right">
+                                            <li>
+                                                <a class="text-sec waves-attach waves-effect" href="DealModify.html"><span class="icon">edit</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-inner" style="margin:40px 14px !important;">
+                                    <table>
+                                        <tr><td style="font-size: 16px;">$1000</td></tr>
+                                        <tr>
+                                            <td style="font-weight:bold;"><br />Government of the peoples republic of china </td>
+                                        </tr>
+                                        <tr><td><br />Demo Deal</td></tr>
+                                    </table>
+
+                                </div>
+
+                                <div class="card-action" style="padding-left: 10px; font-weight: bold; color: grey; padding-top: 12px;">
+                                    1-HIJJAL
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fbtn-container">
+                            <div class="fbtn-inner">
+                                <a class="fbtn fbtn-brand-accent fbtn-lg waves-attach waves-button waves-light" href="Create_Deal.html"><span class="fbtn-text">Add Deal</span><span class="fbtn-ori icon">add</span></a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- js -->
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.min.js"></script>
+    <!-- js for this project -->
+    <script src="../js/project.min.js"></script>
+
+
+    <script>
+        jQuery(function ($) {
+            // /////
+            // CLEARABLE INPUT
+            function tog(v) { return v ? 'addClass' : 'removeClass'; }
+            $(document).on('input', '.clearable', function () {
+                $(this)[tog(this.value)]('x');
+            }).on('mousemove', '.x', function (e) {
+                $(this)[tog(this.offsetWidth - 25 < e.clientX - this.getBoundingClientRect().left)]('onX');
+            }).on('touchstart click', '.onX', function (ev) {
+                ev.preventDefault();
+                $(this).removeClass('x onX').val('').change();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".searchhome").hide();
+            $("#hide").click(function () {
+                $(".searchhome").hide();
+                $("#navmenu").show();
+                $("#dealid").show();
+                $("#show").show();
+                $("#refresh").show();
+                $("header").addClass("privateheader");
+            });
+            $("#show").click(function () {
+                $(".searchhome").show();
+                $("#navmenu").hide();
+                $("#dealid").hide();
+                $("#show").hide();
+                $("#refresh").hide();
+                $("header").removeClass("privateheader");
+            });
+            $("#refresh").click(function () {
+                window.location.replace("Deal.html");
+            });
+            $(".card").click(function () {
+                window.location.replace("DealView.html");
+            });
+        });
+    </script>
+</body>
+</html>

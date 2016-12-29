@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="initial-scale=1.0, width=device-width" name="viewport">
+    <title>Call Report</title>
+    <!-- css -->
+    <link href="../css/base.min.css" rel="stylesheet">
+    <!-- css for this project -->
+    <link href="../css/project.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- favicon -->
+    <!-- ... -->
+    <!-- ie -->
+    <!--[if lt IE 9]>
+        <script src="../js/html5shiv.min.js"></script>
+        <script src="../js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="avoid-fout page-brand">
+   
+    <header class="header header-waterfall" style="background-color:#3f51b5;color:white;">
+        <ul class="nav nav-list pull-left" id="navmenu">
+            <li>
+                <a href="#menu">
+                    <span class="icon icon-lg" id="backspace">keyboard_backspace</span>
+                </a>
+            </li>
+        </ul>
+        <a class="header-logo margin-left-no" href="#" id="dealid">Create Call Report</a>
+
+    </header>
+    <div class="content">
+        <section class="content-inner"></section>
+        <div class="container">
+            <form class="form">
+                <div class="form-group form-group-label" id="companynamediv">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Company-Name">Company</label>
+                            <input class="form-control" id="Company-Name" type="text" data-toggle="modal" href="#modal-big">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label" id="GFCIDdiv">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="GFCID">GFCID</label>
+                            <input class="form-control" id="GFCID" type="text" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Title">Title</label>
+                            <textarea class="form-control textarea-autosize" id="Title" rows="1"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Interaction-Type">Interaction Type</label>
+                            <select class="form-control" id="Interaction-Type" aria-controls="datepicker-adv-2_table" title="Select a Job Category">
+                                <option hidden></option>
+                                <option>Face To Face</option>
+                                <option>Structured Tele-Conference</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Call-Type">Call Type</label>
+                            <select class="form-control" id="Call-Type" aria-controls="datepicker-adv-2_table" title="Select a Job Category">
+                                <option hidden></option>
+                                <option>Annual Credit Affirmation	</option>
+                                <option>Client At Risk	</option>
+                                <option>Closing Sales Call	</option>
+                                <option>Credit Review	</option>
+                                <option>Cross Selling	</option>
+                                <option>Customer Initiated Withdrawal	</option>
+                                <option>De-market	</option>
+                                <option>Deal Structuring	</option>
+                                <option>Deal Structuring - Cash	</option>
+                                <option>Deal Structuring - Funds	</option>
+                                <option>Deal Structuring - Securities	</option>
+                                <option>Deal Structuring - Trade	</option>
+                                <option>Due Diligence	</option>
+                                <option>Email	</option>
+                                <option>Financial Review	</option>
+                                <option>Follow Up Sales Call	</option>
+                                <option>GSS Migration	</option>
+                                <option>Implementation Discussion	</option>
+                                <option>Initial Sales Call	</option>
+                                <option>Issue Definition	</option>
+                                <option>Issue Investigation	</option>
+                                <option>Legal Discussion/Review	</option>
+                                <option>Origination	</option>
+                                <option>Origination - Cash	</option>
+                                <option>Origination - Funds	</option>
+                                <option>Origination - Prepaid	</option>
+                                <option>Origination - Securities	</option>
+                                <option>Origination - Trade	</option>
+                                <option>Pricing/Billing	</option>
+                                <option>Product Demo/Presentation	</option>
+                                <option>Prospecting	</option>
+                                <option>Relationship	</option>
+                                <option>Relationship Management	</option>
+                                <option>Relationship Review	</option>
+                                <option>Transaction Idea	</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="call-date">Call Date</label>
+                            <input class="datepicker-adv datepicker-adv-doc-2 form-control" id="call-date" type="text">
+                        </div>
+                    </div>
+                </div>               
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Content">Content</label>
+                            <textarea class="form-control textarea-autosize" id="Content" rows="1"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="form-group-btn col-lg-6 col-sm-8">
+
+                            <button class="btn btn-brand-accent waves-attach waves-button waves-light" type="submit">Submit</button><button class="btn waves-attach waves-button" type="reset">Reset</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div aria-hidden="true" class="modal fade" id="modal-big" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-xs">
+                <div class="modal-content">
+                    <a class="modal-close" data-dismiss="modal" style="margin-right:0px !important;">&times;</a>
+                    <div class="modal-heading">
+
+                        <!-- <h2 class="modal-title">Company</h2>-->
+                        <a class="header-logo icon icon-lg pull-right form-icon-label" id="show">search</a>
+                        <div class="media-inner">
+                            <input class="form-control clearable" id="myFilter" placeholder='Search Company' type="text">
+                        </div>
+
+                        <!--<header class="header header-waterfall privateheader" style="box-shadow:0 1px 10px rgba(0,0,0,.5)">
+                        <a class="header-logo icon icon-lg pull-right form-icon-label" id="show">search</a>
+                        <div class="searchhome">
+                            <div class="media-inner">
+                                <input class="form-control clearable" id="input-search" placeholder="" type="text">
+                            </div>
+                        </div>
+                    </header>-->
+                    </div>
+                    <table id="mysearch" title="Default Tabl" style="font-size:10px !important;margin-left:20px;margin-right:20px;" data-filter="true" data-input="#myFilter">
+                        <thead>
+                            <tr style="table-layout:fixed;display: block">
+                                <th>Company Name</th>
+                                <th>GFCID</th>
+
+                            </tr>
+                        </thead>
+                        <tbody style="height:200px;display: block;overflow-y: auto;overflow-x: hidden;">
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-1">
+                                            <input class="access-hide" id="input-radio-inline-1" name="input-radio-inline" type="radio" title="1000688009" value="GOVERNMENT OF THE PEOPLES REPUBLIC OF CHINA"> GOVERNMENT OF THE PEOPLES REPUBLIC OF CHINA
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+
+
+                                </td>
+                                <td>1000688009</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-2">
+                                            <input class="access-hide" id="input-radio-inline-2" name="input-radio-inline" type="radio" title="23108" value="BAUSCH & LOMB INCORPORATED">BAUSCH & LOMB INCORPORATED
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+
+
+                                </td>
+                                <td>23108</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-3">
+                                            <input class="access-hide" id="input-radio-inline-3" name="input-radio-inline" type="radio" title="1009373639" value="AXIMA REFRIGERATION SANV">AXIMA REFRIGERATION SANV
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+
+
+                                </td>
+                                <td>1009373639</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-4">
+                                            <input class="access-hide" id="input-radio-inline-4" name="input-radio-inline" type="radio" title="1017707848" value="JOHAMBRO - JOHAMBROCM - BMW1">JOHAMBRO - JOHAMBROCM - BMW1
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+
+
+                                </td>
+                                <td>1017707848</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-5">
+                                            <input class="access-hide" id="input-radio-inline-5" name="input-radio-inline" type="radio" value="MONROE CAPITAL LLC" title="100952365">MONROE CAPITAL LLC
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+
+
+                                </td>
+                                <td>100952365</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <div class="modal-footer">
+                        <p class="text-right">
+                            <!--<button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button">Close</button>-->
+                            <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button" id="Companybtn">OK</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- js -->
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.min.js"></script>
+    <!-- js for this project -->
+    <script src="../js/project.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#backspace").click(function () {
+                window.location.replace("callreport.html");
+            });
+            $("#Companybtn").click(function () {
+                var company = $('input[name=input-radio-inline]:checked', '#mysearch').val();
+                var Gfcid = $('input[name=input-radio-inline]:checked', '#mysearch').attr('title');
+                $("#Company-Name").val(company);
+                $("#companynamediv").addClass("control-highlight");
+                $("#GFCID").val(Gfcid);
+                $("#GFCIDdiv").addClass("control-highlight");
+            });
+        });
+    </script>
+</body>
+</html>

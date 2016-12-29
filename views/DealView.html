@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="initial-scale=1.0, width=device-width" name="viewport">
+    <title>Deal</title>
+    <!-- css -->
+    <link href="../css/base.min.css" rel="stylesheet">
+    <!-- css for this project -->
+    <link href="../css/project.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- favicon -->
+    <!-- ... -->
+    <!-- ie -->
+    <!--[if lt IE 9]>
+        <script src="../js/html5shiv.min.js"></script>
+        <script src="../js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="avoid-fout page-brand">
+
+    <header class="header header-waterfall" style="background-color:#3f51b5;color:white;">
+        <ul class="nav nav-list pull-left" id="navmenu">
+            <li>
+                <a href="#menu">
+                    <span class="icon icon-lg" id="backspace">keyboard_backspace</span>
+                </a>
+            </li>
+        </ul>
+        <a class="header-logo margin-left-no" href="#" id="dealid">Deal View</a>
+        <a class="header-logo icon icon-lg pull-right form-icon-label waves-effect" id="refresh" href="DealModify.html">edit</a>
+    </header>
+    <div class="content">
+        <section class="content-inner"></section>
+        <div class="container">
+            <form class="form">
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="float-text">Deal Name</label>
+                            <input class="form-control" id="Deal-Name" type="text" value="1-HIJJAL" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label" id="companynamediv">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="float-text">Company Name</label>
+                            <input class="form-control" id="Company-Name" type="text" value="Government of the peoples republic of china" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="pro-date">Projected Win Date</label>
+                            <input class="datepicker-adv datepicker-adv-doc-2 form-control" id="pro-date" type="text" value="22-Dec-2015" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Originating-Business">Select Originating Business</label>
+
+                            <select class="form-control" id="Originating-Business" aria-controls="datepicker-adv-2_table" title="Select a Originating" disabled>
+                                <option hidden></option>
+                                <option value="Investment Bank">Investment Bank</option>
+                                <option value="TTS" selected>ABC</option>
+                                <option value="M&A">M&AC</option>
+                                <option value="Banking">Bankingxyz</option>
+                                <option value="FX">GHA</option>
+                                <option value="GSG">DBA</option>
+                                <option value="Private Bank">PBA</option>
+                                <option value="Commercial Bank">CBA</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Deal-Area">Select Deal Area</label>
+                            <select class="form-control" id="Deal-Area" aria-controls="datepicker-adv-2_table" title="Select a Deal" disabled>
+                                <option hidden></option>
+                                <option value="FastTrack-Europe">Fast Track - India</option>
+                                <option value="Global">Univesal</option>
+                                <option value="Local" selected>Localabc</option>
+                                <option value="Regional">Regionalabc</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Deal-Description">Deal Description</label>
+                            <textarea class="form-control textarea-autosize" id="Deal-Description" rows="1" disabled>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Deal-Update">Deal Update and Next Steps</label>
+                            <textarea class="form-control textarea-autosize" id="Deal-Update" rows="1" disabled>Deal Updates</textarea>
+
+                        </div>
+                    </div>
+                </div>
+
+              
+
+            </form>
+        </div>
+
+    
+    </div>
+    <!-- js -->
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.min.js"></script>
+    <!-- js for this project -->
+    <script src="../js/project.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#backspace").click(function () {
+                window.location.replace("Deal.html");
+            });
+          
+        });
+    </script>
+</body>
+</html>

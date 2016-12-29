@@ -1,0 +1,621 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="initial-scale=1.0, width=device-width" name="viewport">
+    <title>Contact</title>
+    <!-- css -->
+    <link href="../css/base.min.css" rel="stylesheet">
+    <!-- css for this project -->
+    <link href="../css/project.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- favicon -->
+    <!-- ... -->
+    <!-- ie -->
+    <!--[if lt IE 9]>
+        <script src="../js/3.7.2/html5shiv.min.js"></script>
+        <script src="../js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="avoid-fout page-brand">
+
+    <header class="header header-waterfall" style="background-color:#3f51b5;color:white;">
+        <ul class="nav nav-list pull-left" id="navmenu">
+            <li>
+                <a href="#menu">
+                    <span class="icon icon-lg" id="backspace">keyboard_backspace</span>
+                </a>
+            </li>
+        </ul>
+        <a class="header-logo margin-left-no" href="#" id="dealid">Contact Edit</a>
+
+    </header>
+    <div class="content">
+        <section class="content-inner"></section><br />
+        <div class="container">
+            <form class="form">
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Last-Name">Last Name</label>
+                            <input class="form-control" id="Last-Name" type="text" value="Contact">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="First-Name">First Name</label>
+                            <input class="form-control" id="First-Name" type="text" value="A">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label" id="companynamediv">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Company-Name">Company</label>
+                            <input class="form-control" id="Company-Name" type="text" data-toggle="modal" href="#modal-big" value="Government of the peoples republic of china">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Email">Email</label>
+                            <input class="form-control" id="Email" type="email" value="xyzcontact@gmail.com">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Job-Title">Job Title</label>
+                            <select class="form-control" id="Job-Title" aria-controls="datepicker-adv-2_table" title="Select a Job Title">
+                                <option hidden></option>
+                                <option selected>Account Manager</option>
+                                <option>Accountant</option>
+                                <option>Analyst</option>
+                                <option>Assistant</option>
+                                <option>Assistant - Support Staff</option>
+                                <option>Assistant Director</option>
+                                <option>Assistant Finance Manager</option>
+                                <option>Assistant Treasurer</option>
+                                <option>Assistant Vice President</option>
+                                <option>Associate</option>
+                                <option>Board Member</option>
+                                <option>Business Coordinator</option>
+                                <option>CAO</option>
+                                <option>CEO</option>
+                                <option>CFO</option>
+                                <option>CIO</option>
+                                <option>COO</option>
+                                <option>CTO</option>
+                                <option>Chairman</option>
+                                <option>Compliance Officer</option>
+                                <option>Dealer</option>
+                                <option>Director</option>
+                                <option>Economist</option>
+                                <option>Executive Officer</option>
+                                <option>Finance Manager</option>
+                                <option>Financial Advisor</option>
+                                <option>Financial Controller</option>
+                                <option>Fund Manager</option>
+                                <option>General Manager</option>
+                                <option>Global Head</option>
+                                <option>Group Head</option>
+                                <option>Head Of Banking</option>
+                                <option>Head Of Capital Management</option>
+                                <option>Head Of Finance</option>
+                                <option>Head Of M&A</option>
+                                <option>Head Of Strategy</option>
+                                <option>Investor Relations</option>
+                                <option>Legal Advisor</option>
+                                <option>Manager</option>
+                                <option>Managing Director</option>
+                                <option>Partner</option>
+                                <option>Portfolio Manager</option>
+                                <option>President</option>
+                                <option>Product Manager</option>
+                                <option>Regional Head</option>
+                                <option>Relationship Manager</option>
+                                <option>Risk Manager</option>
+                                <option>Senior Executive</option>
+                                <option>Senior Government Official</option>
+                                <option>Senior Manager</option>
+                                <option>Senior Official</option>
+                                <option>Senior Vice President</option>
+                                <option>Specialist</option>
+                                <option>Strategist</option>
+                                <option>Trader</option>
+                                <option>Treasurer</option>
+                                <option>Unit Head Investment Services</option>
+                                <option>Unknown</option>
+                                <option>Vice President</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label" id="jobCategorydiv">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Job-Category">Job Category</label>
+                            <input class="form-control" id="Job-Category" type="text" data-toggle="modal" href="#modal-jobCategory" value="Account">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="form-group-btn col-lg-6 col-sm-8">
+                            <button class="btn btn-brand-accent waves-attach waves-button waves-light" type="submit">Save</button><!--<button class="btn waves-attach waves-button" type="reset">Reset</button>-->
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div aria-hidden="true" class="modal fade" id="modal-big" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-xs">
+                <div class="modal-content">
+                    <a class="modal-close" data-dismiss="modal" style="margin-right:0px !important;">&times;</a>
+                    <div class="modal-heading">
+
+                        <!-- <h2 class="modal-title">Company</h2>-->
+                        <a class="header-logo icon icon-lg pull-right form-icon-label" id="show">search</a>
+                        <div class="media-inner">
+                            <input class="form-control clearable" id="myFilter" placeholder='Search Company' type="text">
+                        </div>
+
+                        <!--<header class="header header-waterfall privateheader" style="box-shadow:0 1px 10px rgba(0,0,0,.5)">
+                            <a class="header-logo icon icon-lg pull-right form-icon-label" id="show">search</a>
+                            <div class="searchhome">
+                                <div class="media-inner">
+                                    <input class="form-control clearable" id="input-search" placeholder="" type="text">
+                                </div>
+                            </div>
+                        </header>-->
+                    </div>
+                    <table id="mysearch" title="Default Tabl" style="font-size:10px !important;margin-left:20px;margin-right:20px;" data-filter="true" data-input="#myFilter">
+                        <thead>
+                            <tr style="table-layout:fixed;display: block">
+                                <th>Company Name</th>
+                                <th>GFCID</th>
+
+                            </tr>
+                        </thead>
+                        <tbody style="height:200px;display: block;overflow-y: auto;overflow-x: hidden;">
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-1">
+                                            <input class="access-hide" id="input-radio-inline-1" name="input-radio-inline" type="radio" value="GOVERNMENT OF THE PEOPLES REPUBLIC OF CHINA"> GOVERNMENT OF THE PEOPLES REPUBLIC OF CHINA
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+
+
+                                </td>
+                                <td>1000688009</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-2">
+                                            <input class="access-hide" id="input-radio-inline-2" name="input-radio-inline" type="radio" value="BAUSCH & LOMB INCORPORATED">BAUSCH & LOMB INCORPORATED
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+
+
+                                </td>
+                                <td>23108</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-3">
+                                            <input class="access-hide" id="input-radio-inline-3" name="input-radio-inline" type="radio" value="AXIMA REFRIGERATION SANV">AXIMA REFRIGERATION SANV
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+
+
+                                </td>
+                                <td>1009373639</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-4">
+                                            <input class="access-hide" id="input-radio-inline-4" name="input-radio-inline" type="radio" value="JOHAMBRO - JOHAMBROCM - BMW1">JOHAMBRO - JOHAMBROCM - BMW1
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+
+
+                                </td>
+                                <td>1017707848</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-5">
+                                            <input class="access-hide" id="input-radio-inline-5" name="input-radio-inline" type="radio" value="MONROE CAPITAL LLC">MONROE CAPITAL LLC
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+
+
+                                </td>
+                                <td>100952365</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <div class="modal-footer">
+                        <p class="text-right">
+                            <!--<button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button">Close</button>-->
+                            <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button" id="Companybtn">OK</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div aria-hidden="true" class="modal fade" id="modal-jobCategory" role="dialog" tabindex="-2">
+            <div class="modal-dialog modal-xs">
+                <div class="modal-content">
+                    <a class="modal-close" data-dismiss="modal" style="margin-right:0px !important;">&times;</a>
+                    <div class="modal-heading">
+
+                        <a class="header-logo icon icon-lg pull-right form-icon-label" id="show">search</a>
+                        <div class="media-inner">
+                            <input class="form-control clearable" id="myFilter" placeholder='Search Company' type="text">
+                        </div>
+                    </div>
+                    <table id="myjobsearch" title="Default Tabl" style="font-size:10px !important;margin-left:20px;margin-right:20px;" data-filter="true" data-input="#myFilter">
+                        <thead>
+                            <tr style="table-layout:fixed;display: block">
+                                <th>Job Category</th>
+                            </tr>
+                        </thead>
+                        <tbody style="height:200px;display: block;overflow-y: auto;overflow-x: hidden;">
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline1-1">
+                                            <input class="access-hide" id="input-radio-inline1-1" name="input-radio-inline" type="radio" value="Accountant">Accountant
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline2-2">
+                                            <input class="access-hide" id="input-radio-inline2-2" name="input-radio-inline" type="radio" value="Claims Management">Claims Management
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline3-3">
+                                            <input class="access-hide" id="input-radio-inline3-3" name="input-radio-inline" type="radio" value="Credit Management">Credit Management
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline4-4">
+                                            <input class="access-hide" id="input-radio-inline4-4" name="input-radio-inline" type="radio" value="Executive Management">Executive Management
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline5-5">
+                                            <input class="access-hide" id="input-radio-inline5-5" name="input-radio-inline" type="radio" value="Finance - Accounting">Finance - Accounting
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-6">
+                                            <input class="access-hide" id="input-radio-inline-6" name="input-radio-inline" type="radio" value="Fund Management">Fund Management
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-7">
+                                            <input class="access-hide" id="input-radio-inline-7" name="input-radio-inline" type="radio" value="Human Resources">Human Resources
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-8">
+                                            <input class="access-hide" id="input-radio-inline-8" name="input-radio-inline" type="radio" value="Industry Consultant">Industry Consultant
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-9">
+                                            <input class="access-hide" id="input-radio-inline-9" name="input-radio-inline" type="radio" value="Information Services">Information Services
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-10">
+                                            <input class="access-hide" id="input-radio-inline-10" name="input-radio-inline" type="radio" value="Issuer">Issuer
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-11">
+                                            <input class="access-hide" id="input-radio-inline-11" name="input-radio-inline" type="radio" value="JOB_CATEGORY">JOB_CATEGORY
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-12">
+                                            <input class="access-hide" id="input-radio-inline-12" name="input-radio-inline" type="radio" value="Journalist">Journalist
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-13">
+                                            <input class="access-hide" id="input-radio-inline-13" name="input-radio-inline" type="radio" value="Lead Manager">Lead Manager
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-14">
+                                            <input class="access-hide" id="input-radio-inline-14" name="input-radio-inline" type="radio" value="Legal - Contracts">Legal - Contracts
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-15">
+                                            <input class="access-hide" id="input-radio-inline-15" name="input-radio-inline" type="radio" value="M&A">M&A
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-16">
+                                            <input class="access-hide" id="input-radio-inline-16" name="input-radio-inline" type="radio" value="Marketing - Advertising">Marketing - Advertising
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-17">
+                                            <input class="access-hide" id="input-radio-inline-17" name="input-radio-inline" type="radio" value="Mortgage Brokage">Mortgage Brokage
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-18">
+                                            <input class="access-hide" id="input-radio-inline-18" name="input-radio-inline" type="radio" value="Network Management">Network Management
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-19">
+                                            <input class="access-hide" id="input-radio-inline-19" name="input-radio-inline" type="radio" value="Payments Management">Payments Management
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-20">
+                                            <input class="access-hide" id="input-radio-inline-20" name="input-radio-inline" type="radio" value="Payroll - Benefits">Payroll - Benefits
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-21">
+                                            <input class="access-hide" id="input-radio-inline-21" name="input-radio-inline" type="radio" value="Purchasing - Procurement">Purchasing - Procurement
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-22">
+                                            <input class="access-hide" id="input-radio-inline-22" name="input-radio-inline" type="radio" value="Receivables Management">Receivables Management
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-23">
+                                            <input class="access-hide" id="input-radio-inline-23" name="input-radio-inline" type="radio" value="Sales">Sales
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-24">
+                                            <input class="access-hide" id="input-radio-inline-24" name="input-radio-inline" type="radio" value="Technology">Technology
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-25">
+                                            <input class="access-hide" id="input-radio-inline-25" name="input-radio-inline" type="radio" value="Treasury">Treasury
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-26">
+                                            <input class="access-hide" id="input-radio-inline-26" name="input-radio-inline" type="radio" value="UNAVAILABLE">UNAVAILABLE
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-27">
+                                            <input class="access-hide" id="input-radio-inline-27" name="input-radio-inline" type="radio" value="Underwriting">Underwriting
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-28">
+                                            <input class="access-hide" id="input-radio-inline-28" name="input-radio-inline" type="radio" value="Unknown">Unknown
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                        <label for="input-radio-inline-29">
+                                            <input class="access-hide" id="input-radio-inline-29" name="input-radio-inline" type="radio" value="Venture Capitalist">Venture Capitalist
+                                            <span class="circle"></span><span class="circle-check"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <div class="modal-footer">
+                        <p class="text-right">
+                            <!--<button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button">Close</button>-->
+                            <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button" id="JobCategorybtn">OK</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.min.js"></script>
+    <!-- js for this project -->
+    <script src="../js/project.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#backspace").click(function () {
+                window.location.replace("contact.html"); ;
+            });
+            $("#Companybtn").click(function () {
+                var company = $('input[name=input-radio-inline]:checked', '#mysearch').val();
+                $("#Company-Name").val(company);
+                $("#companynamediv").addClass("control-highlight");
+            });
+            $("#JobCategorybtn").click(function () {
+                var company = $('input[name=input-radio-inline]:checked', '#myjobsearch').val();
+                $("#Job-Category").val(company);
+                $("#jobCategorydiv").addClass("control-highlight");
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="initial-scale=1.0, width=device-width" name="viewport">
+    <title>Login - Material</title>
+    <!-- css -->
+    <link href="../css/base.min.css" rel="stylesheet">
+    <!-- css for this project -->
+    <link href="../css/project.min.css" rel="stylesheet">
+    <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- favicon -->
+    <!-- ... -->
+    <!-- ie -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+         <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="avoid-fout page-brand">
+
+    <header class="header header-waterfall" style="background-color:#3f51b5;color:white;">
+        <ul class="nav nav-list pull-left" id="navmenu">
+            <li>
+                <a href="#menu">
+                    <span class="icon icon-lg" id="backspace">keyboard_backspace</span>
+                </a>
+            </li>
+        </ul>
+        <a class="header-logo margin-left-no" href="#" id="dealid">Contact View</a>
+
+    </header>
+
+    <div class="content">
+        <section class="content-inner"></section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-lg-push-4 col-sm-6 col-sm-push-3">
+                    <section class="content-inner">
+                        <div class="card-wrap">
+                            <div class="card">
+                                <div class="card-main">
+                                    <div class="card-header" style="background-color:#E0E0E0;">
+                                        <div class="card-action-btn pull-right">
+                                            <div class="tile-action tile-action-show">
+                                                <ul class="margin-no nav nav-list pull-right">
+                                                    <li>
+                                                        <a class="text-sec waves-attach waves-effect" href="ContactEdit.html"><span class="icon">edit</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-inner">
+                                            <span>
+                                                <img src="../images/users/profile-2-128.png" /><br /><span style="font-family:'Myriad Set Pro','Helvetica Neue','Helvetica','Arial','sans-serif';font-size:30px;">A Contact</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-main">
+
+                                    <div class="card-inner">
+                                        <sub style="color:#E0E0E0;font-weight:bold;">Company</sub><br />
+                                        Government of the peoples republic of china
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-main">
+
+                                    <div class="card-inner">
+                                        <sub style="color:#E0E0E0;font-weight:bold;">Email</sub><br />
+                                        xyzcontact@gmail.com
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-main">
+                                    <div class="card-inner">
+                                        <sub style="color:#E0E0E0;font-weight:bold;">Job Title</sub><br />
+                                        Account Manager
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-main">
+                                    <div class="card-inner">
+                                        <sub style="color:#E0E0E0;font-weight:bold;">Job Category</sub><br />
+                                        Account
+
+                                    </div>
+                                </div>
+                            </div>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.min.js"></script>
+    <!-- js for this project -->
+    <script src="../js/project.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var queryString = new Array();
+            $("#backspace").click(function () {
+                window.location.replace("contact.html");
+            });
+            var url = window.location.href.slice(window.location.href.indexOf('?') + 1).split('?');
+            debugger
+            for (var i = 0; i < url.length; i++) {
+                var urlparam = url[i].split('=');
+                $(".card-header").css('background-color',urlparam[1]);
+                //alert(urlparam[1]);
+                //if (urlparam[0] == param) {
+                    
+                //}
+            }
+            //if (queryString.length == 0) {
+            //    debugger
+            //    if (window.location.search.split('?').length > 1) {
+            //        debugger
+            //        var params = window.location.search.split('?')[1];
+            //        for (var i = 0; i < params.length; i++) {
+            //            var key = params[i].split('=')[0];
+            //            var value = decodeURIComponent(params[i].split('=')[1]);
+            //            queryString[key] = value;
+            //        }
+            //    }
+            //}
+            //if (queryString["col"] != null) {
+            //    var color=queryString["c"];
+            //    //$(".card-header").css();
+            //    alert(color)
+            //}
+
+        });
+    </script>
+</body>
+</html>

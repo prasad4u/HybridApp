@@ -1,0 +1,748 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="initial-scale=1.0, width=device-width" name="viewport">
+    <title>Deal</title>
+    <!-- css -->
+    <link href="../css/base.min.css" rel="stylesheet">
+    <!-- css for this project -->
+    <link href="../css/project.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- favicon -->
+    <!-- ... -->
+    <!-- ie -->
+    <!--[if lt IE 9]>
+        <script src="../js/html5shiv.min.js"></script>
+        <script src="../js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="avoid-fout page-brand">
+
+    <header class="header header-waterfall" style="background-color:#3f51b5;color:white;">
+        <ul class="nav nav-list pull-left" id="navmenu">
+            <li>
+                <a href="#menu">
+                    <span class="icon icon-lg" id="backspace">keyboard_backspace</span>
+                </a>
+            </li>
+        </ul>
+        <a class="header-logo margin-left-no" href="#" id="dealid">My Implementation</a>
+    </header>
+    <div class="content">
+        <section class="content-inner"></section>
+        <div class="container">
+            <form class="form">
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Deal-Id">Deal Id</label>
+                            <input class="form-control" id="Deal-Id" type="text" value="1-HIJJAL" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="OrderName">Order Name</label>
+                            <input class="form-control" id="OrderName" type="text" value="Demo Deal">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Company">Company</label>
+                            <input class="form-control" id="Company" type="text" value="GOVERNMENT OF THE PEOPLES REPUBLIC OF CHINA" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Product">Product</label>
+                            <input class="form-control" id="Product" type="text" value="Account Opening Form" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Status">Status</label>
+                            <select class="form-control" id="Call-Type" aria-controls="datepicker-adv-2_table" title="Select a Job Category">
+                                <option hidden></option>
+                                <option value="Decommitted">Decommitted</option>
+                                <option value="In Progress">In Progress</option>
+                                <option value="Not Started - Pending KO">Not Started - Pending KO</option>
+                                <option value="Not Tracked">Not Tracked</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Implementation-Revenue">Implementation Revenue</label>
+                            <input class="form-control" id="ImplementationRevenue" type="text" value="$1000" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Planned-StartDate">Planned Start Date</label>
+                            <input class="datepicker-adv datepicker-adv-doc-2 form-control" id="StartDate" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Planned-EndDate">Planned End Date</label>
+                            <input class="datepicker-adv datepicker-adv-doc-2 form-control" id="EndDate" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label" id="IM1div">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="IM1">IM1</label>
+                            <input class="form-control" id="IM1" type="text" data-toggle="modal" href="#modal-IM1" value="Singh Jagkaran">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label" id="IM2div">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="IM2">IM2</label>
+                            <input class="form-control" id="IM2" type="text" data-toggle="modal" href="#modal-IM2">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label" id="IM3div">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="IM3">IM3</label>
+                            <input class="form-control" id="IM3" type="text" data-toggle="modal" href="#modal-IM3">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label" id="TechIMdiv">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Tech-IM">Tech IM</label>
+                            <input class="form-control" id="Tech-IM" type="text" data-toggle="modal" href="#modal-TechIM">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Comments">Comments</label>
+                            <textarea class="form-control textarea-autosize" id="Comments" rows="1"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group form-group-label" id="LegalEntitydiv">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Legal-Entity">Legal Entity</label>
+                            <input class="form-control" id="Legal-Entity" type="text" data-toggle="modal" href="#modal-Legal" value="GOVERNMENT OF THE PEOPLES REPUBLIC OF CHINA">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group form-group-label" id="BillingDetailsdiv">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="Billing-Details">Billing Details</label>
+                            <input class="form-control" id="Billing-Details" type="text" data-toggle="modal" href="#BillingDetails">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8">
+                            <label class="floating-label" for="OnHold/Decommitted Reason">OnHold/Decommitted Reason</label>
+                            <select class="form-control" id="Call-Type" aria-controls="datepicker-adv-2_table" title="">
+                                <option hidden></option>
+                                <option value="Commercial Issues">Commercial Issues</option>
+                                <option value="Contract Issues">Contract Issues</option>
+                                <option value="Credit Denied">Credit Denied</option>
+                                <option value="Customer Changed Their Mind">Customer Changed Their Mind</option>
+                                <option value="Customer Issues">Customer Issues</option>
+                                <option value="Deal Not Finalized">Deal Not Finalized</option>
+                                <option value="Product Decommitted by Sales">Product Decommitted by Sales</option>
+                                <option value="Product Issues">Product Issues</option>
+                                <option value="Re-Solutioning Required">Re-Solutioning Required</option>
+                                <option value="Wrong Solution">Wrong Solution</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group form-group-label">
+                    <div class="row">
+                        <div class="form-group-btn col-lg-6 col-sm-8">
+                            <button class="btn btn-brand-accent waves-attach waves-button waves-light" type="submit">Submit</button><!--<button class="btn waves-attach waves-button" type="reset">Reset</button>-->
+
+                        </div>
+                    </div>
+                </div>
+
+                <div aria-hidden="true" class="modal fade" id="modal-IM1" role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-xs">
+                        <div class="modal-content">
+                            <a class="modal-close" data-dismiss="modal" style="margin-right:0px !important;">&times;</a>
+                            <div class="modal-heading">
+                                <a class="header-logo icon icon-lg pull-right form-icon-label" id="show">search</a>
+                                <div class="media-inner">
+                                    <input class="form-control clearable" id="myFilter" placeholder='Search Company' type="text">
+                                </div>
+                            </div>
+                            <table id="IM1Table" title="Default Tabl" style="font-size:10px !important;margin-left:20px;margin-right:20px;" data-filter="true" data-input="#myFilter">
+                                <thead>
+                                    <tr style="table-layout:fixed;display: block;">
+                                        <th>Last Name & First Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody style="height:200px;display: block;overflow-y: auto;overflow-x: hidden;">
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-IM1-1">
+                                                    <input class="access-hide" id="input-radio-inline-IM1-1" name="input-radio-inline" type="radio" value="Acharya Satish">Acharya Satish
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-IM1-2">
+                                                    <input class="access-hide" id="input-radio-inline-IM1-2" name="input-radio-inline" type="radio" value="Singh Jagkaran">Singh Jagkaran
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-IM1-3">
+                                                    <input class="access-hide" id="input-radio-inline-IM1-3" name="input-radio-inline" type="radio" value="Achnitz Jagkaran">Achnitz Holger
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="modal-footer">
+                                <p class="text-right">
+                                    <!--<button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button">Close</button>-->
+                                    <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button" id="btnIM1">OK</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div aria-hidden="true" class="modal fade" id="modal-IM2" role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-xs">
+                        <div class="modal-content">
+                            <a class="modal-close" data-dismiss="modal" style="margin-right:0px !important;">&times;</a>
+                            <div class="modal-heading">
+                                <a class="header-logo icon icon-lg pull-right form-icon-label" id="show">search</a>
+                                <div class="media-inner">
+                                    <input class="form-control clearable" id="myFilter" placeholder='Search Company' type="text">
+                                </div>
+                            </div>
+                            <table id="IM2Table" title="Default Tabl" style="font-size:10px !important;margin-left:20px;margin-right:20px;" data-filter="true" data-input="#myFilter">
+                                <thead>
+                                    <tr style="table-layout:fixed;display: block;">
+                                        <th>Last Name & First Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody style="height:200px;display: block;overflow-y: auto;overflow-x: hidden;">
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-IM2-1">
+                                                    <input class="access-hide" id="input-radio-inline-IM2-1" name="input-radio-inline" type="radio" value="Acharya Satish">Acharya Satish
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-IM2-2">
+                                                    <input class="access-hide" id="input-radio-inline-IM2-2" name="input-radio-inline" type="radio" value="Singh Jagkaran">Singh Jagkaran
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-IM2-3">
+                                                    <input class="access-hide" id="input-radio-inline-IM2-3" name="input-radio-inline" type="radio" value="Achnitz Jagkaran">Achnitz Holger
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="modal-footer">
+                                <p class="text-right">
+                                    <!--<button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button">Close</button>-->
+                                    <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button" id="btnIM2">OK</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div aria-hidden="true" class="modal fade" id="modal-IM3" role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-xs">
+                        <div class="modal-content">
+                            <a class="modal-close" data-dismiss="modal" style="margin-right:0px !important;">&times;</a>
+                            <div class="modal-heading">
+                                <a class="header-logo icon icon-lg pull-right form-icon-label" id="show">search</a>
+                                <div class="media-inner">
+                                    <input class="form-control clearable" id="myFilter" placeholder='Search Company' type="text">
+                                </div>
+                            </div>
+                            <table id="IM3Table" title="Default Tabl" style="font-size:10px !important;margin-left:20px;margin-right:20px;" data-filter="true" data-input="#myFilter">
+                                <thead>
+                                    <tr style="table-layout:fixed;display: block;">
+                                        <th>Last Name & First Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody style="height:200px;display: block;overflow-y: auto;overflow-x: hidden;">
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-IM3-1">
+                                                    <input class="access-hide" id="input-radio-inline-IM3-1" name="input-radio-inline" type="radio" value="Acharya Satish">Acharya Satish
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-IM3-2">
+                                                    <input class="access-hide" id="input-radio-inline-IM3-2" name="input-radio-inline" type="radio" value="Singh Jagkaran">Singh Jagkaran
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-IM3-3">
+                                                    <input class="access-hide" id="input-radio-inline-IM3-3" name="input-radio-inline" type="radio" value="Achnitz Jagkaran">Achnitz Holger
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="modal-footer">
+                                <p class="text-right">
+                                    <!--<button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button">Close</button>-->
+                                    <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button" id="btnIM3">OK</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div aria-hidden="true" class="modal fade" id="modal-TechIM" role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-xs">
+                        <div class="modal-content">
+                            <a class="modal-close" data-dismiss="modal" style="margin-right:0px !important;">&times;</a>
+                            <div class="modal-heading">
+                                <a class="header-logo icon icon-lg pull-right form-icon-label" id="show">search</a>
+                                <div class="media-inner">
+                                    <input class="form-control clearable" id="myFilter" placeholder='Search Company' type="text">
+                                </div>
+                            </div>
+                            <table id="TechIMTable" title="Default Tabl" style="font-size:10px !important;margin-left:20px;margin-right:20px;" data-filter="true" data-input="#myFilter">
+                                <thead>
+                                    <tr style="table-layout:fixed;display: block;">
+                                        <th>Last Name & First Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody style="height:200px;display: block;overflow-y: auto;overflow-x: hidden;">
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-TechIM-1">
+                                                    <input class="access-hide" id="input-radio-inline-TechIM-1" name="input-radio-inline" type="radio" value="Acharya Satish">Acharya Satish
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-TechIM-2">
+                                                    <input class="access-hide" id="input-radio-inline-TechIM-2" name="input-radio-inline" type="radio" value="Singh Jagkaran">Singh Jagkaran
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-TechIM-3">
+                                                    <input class="access-hide" id="input-radio-inline-TechIM-3" name="input-radio-inline" type="radio" value="Achnitz Jagkaran">Achnitz Holger
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="modal-footer">
+                                <p class="text-right">
+                                    <!--<button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button">Close</button>-->
+                                    <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button" id="btnTechIM">OK</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div aria-hidden="true" class="modal fade" id="BillingDetails" role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-xs">
+                        <div class="modal-content">
+                            <a class="modal-close" data-dismiss="modal" style="margin-right:0px !important;">&times;</a>
+                            <div class="modal-heading">
+
+
+                                <a class="header-logo icon icon-lg pull-right form-icon-label" id="show">search</a>
+                                <div class="media-inner">
+                                    <input class="form-control clearable" id="myFilter" placeholder='Search Company' type="text">
+                                </div>
+
+                            </div>
+                            <table id="BillingDetails" title="Default Tabl" style="font-size:10px !important;margin-left:20px;margin-right:20px;" data-filter="true" data-input="#myFilter">
+                                <thead>
+                                    <tr style="table-layout:fixed;display: block">
+                                        <th>Billing code</th>
+                                        <th>Billing description</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody style="height:200px;display: block;overflow-y: auto;overflow-x: hidden;">
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-BillingDetails-1">
+                                                    <input class="access-hide" id="input-radio-inline-BillingDetails-1" name="input-radio-inline" type="radio" title="70084" value="70084">70084
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>Comm Cards - Change in Billing Programme</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-BillingDetails-2">
+                                                    <input class="access-hide" id="input-radio-inline-BillingDetails-2" name="input-radio-inline" type="radio" title="70085" value="70085">70085
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+
+
+                                        </td>
+                                        <td>Comm Cards - IB Implementation Fee</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-BillingDetails-3">
+                                                    <input class="access-hide" id="input-radio-inline-BillingDetails-3" name="input-radio-inline" type="radio" title="70086" value="">70086
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+
+
+                                        </td>
+                                        <td>Comm Cards - CB Implementation Fee</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-BillingDetails-4">
+                                                    <input class="access-hide" id="input-radio-inline-BillingDetails-4" name="input-radio-inline" type="radio" title="70087" value="70087">70087
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+
+
+                                        </td>
+                                        <td>Comm Cards - Change in Reporting Hierarchy - IB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-BillingDetails-5">
+                                                    <input class="access-hide" id="input-radio-inline-BillingDetails-5" name="input-radio-inline" type="radio" value="70088" title="70088">70088
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+
+
+                                        </td>
+                                        <td>Comm Cards - Change in Reporting Hierarchy - CB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-BillingDetails-6">
+                                                    <input class="access-hide" id="input-radio-inline-BillingDetails-6" name="input-radio-inline" type="radio" value="70089" title="70089">70089
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+
+
+                                        </td>
+                                        <td>Comm Cards - Change in Billing Hierarchy</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-BillingDetails-7">
+                                                    <input class="access-hide" id="input-radio-inline-BillingDetails-7" name="input-radio-inline" type="radio" value="70090" title="70090">70090
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+
+
+                                        </td>
+                                        <td>Comm Cards - Change in Statement Cycle date</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-BillingDetails-8">
+                                                    <input class="access-hide" id="input-radio-inline--BillingDetails-8" name="input-radio-inline" type="radio" value="70091" title="70091">70091
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+
+
+                                        </td>
+                                        <td>Comm Cards - IB Card Design/Logo Fee</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-BillingDetails-9">
+                                                    <input class="access-hide" id="input-radio-inline-BillingDetails-9" name="input-radio-inline" type="radio" value="70092" title="70092">70092
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+
+
+                                        </td>
+                                        <td>Comm Cards - CB Card Design/Logo Fee</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-BillingDetails-10">
+                                                    <input class="access-hide" id="input-radio-inline-BillingDetails-10" name="input-radio-inline" type="radio" value="70093" title="70093">70093
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>Comm Cards - CCRS Setup and Training Fee</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="modal-footer">
+                                <p class="text-right">
+                                    <!--<button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button">Close</button>-->
+                                    <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button" id="btnBillingDetails">OK</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div aria-hidden="true" class="modal fade" id="modal-Legal" role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-xs">
+                        <div class="modal-content">
+                            <a class="modal-close" data-dismiss="modal" style="margin-right:0px !important;">&times;</a>
+                            <div class="modal-heading">                        
+                                <a class="header-logo icon icon-lg pull-right form-icon-label" id="show">search</a>
+                                <div class="media-inner">
+                                    <input class="form-control clearable" id="myFilter" placeholder='Search Company' type="text">
+                                </div>
+
+                            </div>
+                            <table id="myLegal" title="Default Tabl" style="font-size:10px !important;margin-left:20px;margin-right:20px;" data-filter="true" data-input="#myFilter">
+                                <thead>
+                                    <tr style="table-layout:fixed;display: block">
+                                        <th>Company Name</th>
+                                        <th>GFCID</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody style="height:200px;display: block;overflow-y: auto;overflow-x: hidden;">
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-1">
+                                                    <input class="access-hide" id="input-radio-inline-1" name="input-radio-inline" type="radio" title="1000688009" value="GOVERNMENT OF THE PEOPLES REPUBLIC OF CHINA"> GOVERNMENT OF THE PEOPLES REPUBLIC OF CHINA
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+
+
+                                        </td>
+                                        <td>1000688009</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-2">
+                                                    <input class="access-hide" id="input-radio-inline-2" name="input-radio-inline" type="radio" title="23108" value="BAUSCH & LOMB INCORPORATED">BAUSCH & LOMB INCORPORATED
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+
+
+                                        </td>
+                                        <td>23108</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-3">
+                                                    <input class="access-hide" id="input-radio-inline-3" name="input-radio-inline" type="radio" title="1009373639" value="AXIMA REFRIGERATION SANV">AXIMA REFRIGERATION SANV
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+
+
+                                        </td>
+                                        <td>1009373639</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-4">
+                                                    <input class="access-hide" id="input-radio-inline-4" name="input-radio-inline" type="radio" title="1017707848" value="JOHAMBRO - JOHAMBROCM - BMW1">JOHAMBRO - JOHAMBROCM - BMW1
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+
+
+                                        </td>
+                                        <td>1017707848</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio radio-adv radio-inline" style="font-size:9px;">
+                                                <label for="input-radio-inline-5">
+                                                    <input class="access-hide" id="input-radio-inline-5" name="input-radio-inline" type="radio" value="MONROE CAPITAL LLC" title="100952365">MONROE CAPITAL LLC
+                                                    <span class="circle"></span><span class="circle-check"></span>
+                                                </label>
+                                            </div>
+
+
+                                        </td>
+                                        <td>100952365</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <div class="modal-footer">
+                                <p class="text-right">
+                                    <!--<button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button">Close</button>-->
+                                    <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button" id="btnmyLegal">OK</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+    </div>
+    <!-- js -->
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.min.js"></script>
+    <!-- js for this project -->
+    <script src="../js/project.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#backspace").click(function () {
+                window.location.replace("myimplementations.html");
+            });
+            $("#btnIM1").click(function () {
+                var company = $('input[name=input-radio-inline]:checked', '#IM1Table').val();
+                $("#IM1").val(company);
+                $("#IM1div").addClass("control-highlight");
+
+            });
+            $("#btnIM2").click(function () {
+                var company = $('input[name=input-radio-inline]:checked', '#IM2Table').val();
+                $("#IM2").val(company);
+                $("#IM2div").addClass("control-highlight");
+
+            });
+            $("#btnIM3").click(function () {
+                var company = $('input[name=input-radio-inline]:checked', '#IM3Table').val();
+                $("#IM3").val(company);
+                $("#IM3div").addClass("control-highlight");
+
+            });
+            $("#btnTechIM").click(function () {
+                var company = $('input[name=input-radio-inline]:checked', '#TechIMTable').val();
+                $("#Tech-IM").val(company);
+                $("#TechIMdiv").addClass("control-highlight");
+
+            });
+            $("#btnBillingDetails").click(function () {
+                var company = $('input[name=input-radio-inline]:checked', '#BillingDetails').val();
+                $("#Billing-Details").val(company);
+                $("#BillingDetailsdiv").addClass("control-highlight");
+
+            });
+            $("#btnmyLegal").click(function () {
+                var company = $('input[name=input-radio-inline]:checked', '#myLegal').val();
+                $("#Legal-Entity").val(company);
+                $("#LegalEntitydiv").addClass("control-highlight");
+
+            });
+
+        });
+    </script>
+</body>
+</html>
